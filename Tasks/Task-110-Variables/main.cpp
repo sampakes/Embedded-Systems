@@ -24,11 +24,11 @@ int main()
     printf("\nTASK-110\n");
 
     // Integer
-    int count = 0;
+    int count = 10;
     printf("count = %d\n", count);
 
     // Add one to count
-    count = count + 1;
+    count = count + 2;
     printf("New value of count = %d\n", count);
 
     // Char

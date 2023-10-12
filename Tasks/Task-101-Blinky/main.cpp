@@ -1,12 +1,12 @@
 #include "mbed.h"
 
 // Create a DigitalOut “object” called greenLED. Pass constant LED1 as a “parameter”
-DigitalOut greenLED(LED1);
+DigitalOut greenLED();
 
 //These are "commented out" and so are not part of the program. You can uncomment them by removing the // characters
 //Your task is to make a sequence alternating between Green+Red and just Blue 
-//DigitalOut blueLED(LED2);
-//DigitalOut redLED(LED3);
+DigitalOut blueLED(B108);
+DigitalOut redLED(B109);
 
 //The main function - all executable C / C++ applications have a main function. This is our entry point in the software
 int main() 
@@ -27,5 +27,22 @@ int main()
 
         // Wait 0.2 second
         wait_us(100000); 
+
+        blueLED = 1;
+
+        wait_us(100000);
+
+        blueLED = 0;
+
+        wait_us(100000);
+
+        redLED = 1;
+
+        wait_us(100000);
+
+        redLED = 0;
+
+        wait_us(100000);
+
     }
 }
