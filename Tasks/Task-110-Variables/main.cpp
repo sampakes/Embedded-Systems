@@ -33,13 +33,13 @@ int main()
 
     // Char
     char character;
-    character = 'A';
+    character = '65';
     printf("The character %c has the ASCII code %d\n", character, character);
 
     // Short
-    short shortCount = 32766;
+    unned short shortCount = 32766;
     printf("The value of shortCount is %hd\n", shortCount);
-    shortCount = shortCount + 1;
+    shortCount = shortCount + 2;
     printf("add 1 and shortCount is %hd\n", shortCount);
 
     // Long long
@@ -71,5 +71,14 @@ int main()
     printf("Size of a double is %d bytes\n", sizeof(double));
 
     // Stop
-    while (true);   
-}
+    while (true); 
+
+    //Integers are whole numbers. The types:
+    // char
+    // short: consumes half the memory of an int
+    // int
+    // long
+    // long long
+
+    // /n (tells the terminal to start a newline)  
+} 

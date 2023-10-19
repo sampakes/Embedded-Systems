@@ -31,6 +31,6 @@ int main()
 
         //Wait for noise to settle
         wait_us(10000);
-    }
+    }    
 }
 
